@@ -1,0 +1,35 @@
+<%= include header.ejs %>
+    <%= include menu.ejs %>
+    <div class="container">
+        <div class="main-container">
+            <div class="main clearfix">
+
+                <article>
+
+                    <h2>Hosts</h2>
+                    <a href="/host/new" type="button" id="add-host" class="btn btn-labeled btn-success pull-right" style="margin-top: -50px;"><span class="btn-label"><i class="glyphicon glyphicon-plus"></i></span><span class="btn-text">Add Host</span></a>
+                    <hr>
+                    <div id="hosts-list">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Name</th>
+                                <th>Url</th>
+                                <th>Group</th>
+                                <th></th>
+                            </tr>
+                            <% for (host in hosts) { %>
+                                <tr>
+                                    <td><%= hosts[host].Name %></td>
+                                    <td><%= hosts[host].Url %></td>
+                                    <td><%= hosts[host].GroupName != null ? hosts[host].GroupName : '' %></td>
+                                    <td><a href="/host/<%= hosts[host].idHost %>" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i></a></td>
+                                </tr>
+                            <% } %>
+                        </table>
+                    </div>
+
+                </article>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+    </div>
+<%= include footer.ejs %>

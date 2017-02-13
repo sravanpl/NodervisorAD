@@ -1,0 +1,31 @@
+<%= include header.ejs %>
+    <%= include menu.ejs %>
+    <div class="container">
+        <div class="main-container">
+            <div class="main clearfix">
+
+                <article>
+
+                    <h2>Groups</h2>
+                    <a href="/group/new" type="button" id="add-group" class="btn btn-labeled btn-success pull-right" style="margin-top: -50px;"><span class="btn-label"><i class="glyphicon glyphicon-plus"></i></span><span class="btn-text">Add Group</span></a>
+                    <hr>
+                    <div id="groups-list">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Name</th>
+                                <th></th>
+                            </tr>
+                            <% for (group in groups) { %>
+                                <tr>
+                                    <td><%= groups[group].Name %></td>
+                                    <td><a href="/group/<%= groups[group].idGroup %>" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i></a></td>
+                                </tr>
+                            <% } %>
+                        </table>
+                    </div>
+
+                </article>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+    </div>
+<%= include footer.ejs %>

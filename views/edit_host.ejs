@@ -1,0 +1,48 @@
+<%= include header.ejs %>
+    <%= include menu.ejs %>
+    <div class="container">
+        <div class="main-container">
+
+            <div class="main clearfix">
+                <article>
+
+                    <h2><%= (host === null) ? 'New Host' : 'Edit ' + host.Name %></h2>
+                    <hr>
+                    <form method="post" role="form">
+                        <div class="row" style="margin-left: -15px;">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="inputName" class="control-label">Name</label>
+                                    <input type="text" name="name" class="form-control" id="inputName" <%= (host === null) ? 'placeholder=Name' : 'value=' + host.Name %> >
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputUrl" class="control-label">Url</label>
+                                    <input type="text" name="url" class="form-control" id="inputUrl" <%= (host === null) ? 'placeholder=http://hostname:9009' : 'value=' + host.Url %> >
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputGroup" class="control-label">Group</label>
+                                    <select name="group" id="inputGroup" class="form-control">
+                                        <option value="null">No Group</option>
+                                        <% for (group in groups) { %>
+                                            <option <%= (host !== null) ? ((host.idGroup == groups[group].idGroup) ? 'selected' : '') : '' %> value="<%= groups[group].idGroup %>"><%= groups[group].Name %></option>
+                                        <% } %>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" name="submit" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <% if (host !== null) { %>
+                        <form method="post">
+                            <div class="form-group">
+                                <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+                            </div>
+                        </form>
+                    <% } %>
+                </article>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+    </div>
+<%= include footer.ejs %>

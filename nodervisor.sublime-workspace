@@ -1,0 +1,508 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sy",
+				"style\tAttr"
+			],
+			[
+				"pl",
+				"plugin"
+			],
+			[
+				"body",
+				"bodyParser"
+			],
+			[
+				"desti",
+				"destinationFile\t(fileBrowser.ejs)"
+			],
+			[
+				"source",
+				"sourceFile\t(Program.cs)"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"res",
+				"results\t(main.js)"
+			],
+			[
+				"an",
+				"angular"
+			],
+			[
+				"Con",
+				"Contact"
+			],
+			[
+				"$res",
+				"$resource\tAngularJS"
+			],
+			[
+				"$htt",
+				"$httpProvider"
+			],
+			[
+				"per",
+				"person"
+			],
+			[
+				"pe",
+				"persons"
+			],
+			[
+				"pers",
+				"persons"
+			],
+			[
+				"selec",
+				"selectedPerson"
+			],
+			[
+				"pes",
+				"persons"
+			],
+			[
+				"ser",
+				"service\tAngularJS"
+			],
+			[
+				"select",
+				"selectPerson"
+			],
+			[
+				"http",
+				"http.get"
+			],
+			[
+				"cos",
+				"console.log"
+			],
+			[
+				"hel",
+				"hello"
+			],
+			[
+				"depe",
+				"dependsOn"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"so",
+				"socket"
+			],
+			[
+				"pr",
+				"process"
+			],
+			[
+				"re",
+				"readLine"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "install ",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"set sy html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set sy gra",
+				"Set Syntax: Gradle"
+			],
+			[
+				"set sy js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set sy ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set sy ej",
+				"Set Syntax: EJS (<% and %>)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set sy py",
+				"Set Syntax: Python"
+			],
+			[
+				"set sy java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"set sy htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syn py",
+				"Set Syntax: Python"
+			],
+			[
+				"ins pac",
+				"Package Control: Install Package"
+			],
+			[
+				"set syn grad",
+				"Set Syntax: Gradle"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 176.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Users/SravanKumar/testexec/index_old.js",
+		"/C/Users/SravanKumar/testexec/index.js",
+		"/F/VMs/win ser 2016/Windows Server 2016.vmx",
+		"/C/Users/SravanKumar/Documents/Visual Studio 2010/Projects/inActiveActiveDirectoryUsers/inActiveActiveDirectoryUsers/Program.cs",
+		"/F/code/Github/.NetProjects/NYU/NYU/Program.cs",
+		"/F/code/Github/.NetProjects/newblockContent/ThisAddIn.cs",
+		"/F/code/Github/.NetProjects/blockContent/blockContent/app.manifest",
+		"/F/code/Github/.NetProjects/blockContent/blockContent/bin/Release/blockContent.dll.manifest",
+		"/F/Downloads/bpoplugin_jun20/newblockContent/ThisAddIn.cs",
+		"/C/Users/SravanKumar/workspace/HlopGradle/build.gradle",
+		"/C/Users/SravanKumar/Documents/Visual Studio 2010/Projects/deleteOldFiles/deleteOldFiles/bin/Debug/FileRemovalReport_20161208_copy.html",
+		"/C/Users/SravanKumar/Downloads/nodervisor-master/package.json",
+		"/C/Users/SravanKumar/Downloads/cesi-master/userinfo.sql",
+		"/C/Users/SravanKumar/Downloads/cesi-master/cesi.conf",
+		"/C/Users/SravanKumar/Downloads/cesi-master/cesi/web.py",
+		"/C/Users/SravanKumar/Documents/visual studio 2010/Projects/deleteOldFiles/deleteOldFiles/bin/Debug/delFiles.bat",
+		"/C/Users/SravanKumar/Documents/visual studio 2010/Projects/deleteOldFiles/deleteOldFiles/bin/Debug/boa.txt",
+		"/C/Users/SravanKumar/workspace/ProductCatalog/build.gradle",
+		"/C/Users/SravanKumar/workspace/HlopGradle/gradlew.bat",
+		"/C/Users/SravanKumar/Downloads/eclipse-che-latest/eclipse-che-4.7.2/sdk/assembly-ide-war/pom.xml",
+		"/C/Users/SravanKumar/Documents/amazonbooks.html",
+		"/C/Users/SravanKumar/Downloads/build (1).gradle",
+		"/C/Users/SravanKumar/workspace/HlopGradle/build.gradle.arti",
+		"/C/Users/SravanKumar/workspace/HlopGradle/log.log",
+		"/C/Users/SravanKumar/Documents/A Aa(Musfiq).srt",
+		"/F/VMs/bitnami-eclipseche-4.7.2-0-linux-ubuntu-14.04-x86_64/README.txt",
+		"/C/Users/SravanKumar/Documents/hlsc",
+		"/C/Users/SravanKumar/Documents/visual studio 2010/Projects/deleteOldFiles/deleteOldFiles/bin/Debug/FileRemovalReport_20165708.html",
+		"/C/Program Files (x86)/IBM/Lotus/Notes/Data/380029.id",
+		"/C/Windows/System32/config/SOFTWARE",
+		"/C/Users/SravanKumar/Downloads/slf4j-api-1.7.12.pom",
+		"/C/Users/SravanKumar/Downloads/gradle (1).properties",
+		"/C/Users/SravanKumar/workspace/HlopGradle/gradle.properties",
+		"/C/Users/SravanKumar/testexec/test.bat",
+		"/C/Users/SravanKumar/IdeaProjects/test/build.gradle",
+		"/C/Users/SravanKumar/IdeaProjects/test/settings.gradle",
+		"/C/Users/SravanKumar/Downloads/download (2)",
+		"/C/Users/SravanKumar/workspace/ProductCatalog/.classpath",
+		"/C/Users/SravanKumar/workspace/ProductCatalog/.project",
+		"/F/code/ChromeExt/test.html",
+		"/F/code/Github/.NetProjects/MBCleanUp/MBCleanUp/Program.cs",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/server.js",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/app/routes.js",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/views/fileBrowser.ejs",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/views/login.ejs",
+		"/F/code/Github/nodervisor/package.json",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/views/profile.ejs",
+		"/C/Users/SravanKumar/Documents/Visual Studio 2010/Projects/fileCleanup/fileCleanup/fileCleanup.csproj",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/package.json",
+		"/C/Users/SravanKumar/Downloads/easy-node-authentication-local/config/database.js",
+		"/C/Users/SravanKumar/copyFiles/index.js",
+		"/C/Users/SravanKumar/copyFiles/package.json",
+		"/C/Users/SravanKumar/AppData/Local/Google/Chrome/User Data/Local State",
+		"/C/Users/SravanKumar/base64",
+		"/G/Sravan/Photos/Skiing Trip/MaheshMob/IMG_1399.AAE",
+		"/F/code/ChromeExt/manifest.json",
+		"/F/code/ChromeExt/popup.html",
+		"/F/code/ChromeExt/popup2.js",
+		"/F/code/ChromeExt/popup.js",
+		"/F/code/ChromeExt/getPagesSource.js",
+		"/F/code/Github/.NetProjects/blockContent/UpgradeLog.XML",
+		"/F/code/Github/.NetProjects/blockContent/blockContent.sln",
+		"/C/Users/SravanKumar/Downloads/main.js",
+		"/F/MeanEg/public/js/controllers/MainCtrl.js",
+		"/F/MeanEg/public/index.html",
+		"/F/MeanEg/public/index_old.html",
+		"/C/Users/SRAVAN~1/AppData/Local/Temp/7zE00F6829D/main.js",
+		"/C/Users/SravanKumar/Desktop/main.js",
+		"/F/MeanEg/public/libs/angular-route/angular-route.min.js.map",
+		"/F/MeanEg/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/F/MeanEg/public/sampleJson.json",
+		"/F/MeanEg/bower.json",
+		"/C/Users/SravanKumar/Downloads/AngJs Tutorial section1/section1/completed/index.html",
+		"/C/Users/SravanKumar/Downloads/AngJs Tutorial section1/section1/lesson1/index.html",
+		"/C/Users/SravanKumar/Downloads/AngJs Tutorial section1/section1/lesson2/index.html",
+		"/F/MeanEg/server.js",
+		"/F/Softwares/MeanStack/Sravan/.bowerrc",
+		"/F/MeanEg/package.json",
+		"/F/MeanEg/.bowerrc",
+		"/F/MeanEg/public/js/controllers/MainCntrl.js",
+		"/F/MeanEg/public/js/controllers/NerdCtrl.js",
+		"/F/MeanEg/public/js/Services/NerdService.js",
+		"/F/MeanEg/public/js/appRoutes.js",
+		"/F/MeanEg/public/views/home.html",
+		"/F/MeanEg/public/views/nerd.html",
+		"/F/MeanEg/public/js/app.js",
+		"/F/MeanEg/config/db.js",
+		"/F/MeanEg/app/models/nerd.js",
+		"/F/MeanEg/app/routes.js",
+		"/F/MeanEg/public/views/geek.html",
+		"/F/hlop/package.json",
+		"/F/hlop/GruntFile.js",
+		"/C/Users/SravanKumar/Downloads/configparser-3.2.0r3/README.rst",
+		"/C/Users/SravanKumar/Downloads/configparser-3.2.0r3/setup.py",
+		"/F/hlop/js/1/min2.js",
+		"/C/Users/SravanKumar/Downloads/mussh-1.0/mussh/test/testhosts.list",
+		"/C/Users/SravanKumar/Downloads/mussh-1.0/mussh/test/12_async.sh",
+		"/C/Users/SravanKumar/Downloads/mussh-1.0/mussh/test/11_hostfile.sh",
+		"/C/Users/SravanKumar/Downloads/mussh-1.0/mussh/test/10_basic_connect.sh",
+		"/F/hlop/build/final.js",
+		"/F/hlop/js/scripts.js",
+		"/F/hlop/js/ie6.js",
+		"/F/hlop/js/1/min.js",
+		"/C/Users/SravanKumar/Downloads/gradle-2.8-bin/gradle-2.8/bin/gradle.bat",
+		"/C/Users/SravanKumar/Downloads/gradle-2.8-bin/gradle-2.8/bin/build.gradle",
+		"/C/Users/SravanKumar/Downloads/gradle-2.8-bin/gradle-2.8/bin/gradle",
+		"/C/Users/SravanKumar/wildfly-8.2.0.Final/standalone/configuration/standalone.xml",
+		"/C/Users/SravanKumar/wildfly-8.2.0.Final/bin/standalone.conf",
+		"/F/code/test.html",
+		"/C/Users/SravanKumar/Downloads/gradle-2.8-bin/gradle-2.8/bin/buil.gradle",
+		"/C/Users/SravanKumar/Downloads/380029.id",
+		"/C/Users/SravanKumar/Desktop/nodeJsChat/c2.html",
+		"/C/Users/SravanKumar/Desktop/nodeJsChat/client.js",
+		"/C/Users/SravanKumar/Desktop/nodeJsChat/Server.js",
+		"/C/Users/SravanKumar/Desktop/nodeJsChat/ReadLine.js",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc/Rocksmith 2014/Rocksmith.ini",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/SravanKumar/Desktop/desktop.ini",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc/Rocksmith 2014/dlc/SKIDROWCRACK.COM.txt",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc/Rocksmith 2014/rocksmith2014_230579_crash_2013_10_23T22_15_32C0.mdmp",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc.nfo",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc/p2pgames-rocksmith2014.wup2wdlc.nfo",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc/Rocksmith 2014/p2pgames-rocksmith2014.wup2wdlc.nfo",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/p2pgames-rocksmith2014.wup2wdlc.SFV",
+		"/F/Downloads/Rocksmith.2014.All.Updates.Incl.Imports.and.DLC.Pack1-P2PGAMES/file_id.diz",
+		"/C/Users/SravanKumar/Desktop/HealthScans/xrebel-1.0.1-crack/xrebel-1.0.1/xrebel/xrebel.lic",
+		"/C/Users/SravanKumar/Desktop/HealthScans/xrebel-1.0.1-crack/readme.txt"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+			"<open files>,<open folders>",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"9351198758",
+			"\\n",
+			"\"\\n",
+			"\\n",
+			"\\\\n",
+			"/$/",
+			"https",
+			"%APP_HOME%",
+			"networkDriveChe",
+			"zip",
+			"ZIPPASSWORD",
+			"mongoose",
+			"itms",
+			"selectedPerson",
+			"table-bo",
+			"td",
+			"MainCtrl",
+			"MainCntrl",
+			"MainCtrl",
+			"ngRoute",
+			"https",
+			" <security-realm",
+			"UndertowRealm",
+			"urn:jboss:domain:web",
+			"subsystem",
+			"web",
+			"http",
+			"connector name=\"http",
+			"connector",
+			"conne",
+			"https",
+			"ssl",
+			"\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			">link<a/>\\n",
+			">link<a/>",
+			"<a href=\"https",
+			"th",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "nodervisor.sublime-project",
+	"replace":
+	{
+		"height": 86.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"angular-reso",
+				"public\\libs\\angular-route\\angular-route.min.js.map"
+			],
+			[
+				"boot",
+				"node_modules\\bootstrap\\dist\\css\\bootstrap.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

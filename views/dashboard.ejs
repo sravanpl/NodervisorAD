@@ -1,0 +1,94 @@
+<%= include header.ejs %>
+    <% var hideMenu = true %>
+    <%= include menu.ejs %>
+    <div class="container" style="width: 100%;">
+        <div class="main-container" style="width: 100%;">
+            <div class="main clearfix">
+                <style media="screen">
+                    .redIcons {
+                        color: #aa2700;
+                    }
+
+                    .greenIcons {
+                        color: #1da13e;
+                    }
+
+                    .blueIcons {
+                        color: #1641c4;
+                    }
+
+                    .goldIcons {
+                        color: #f0b120;
+                    }
+
+                    @media only screen and (min-width: 768px) {
+                        .largeIcon {
+                            font-size: 36px;
+                        }
+                    }
+
+                    @media only screen and (min-width: 1140px) {
+                        .largeIcon {
+                            font-size: 60px;
+                        }
+                    }
+                </style>
+                <article style="width: 100%;">
+                    <div id="hosts-listing">
+                    </div>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+    </div>
+    <script type="text/javascript">
+        function updateList() {
+            $.ajax({
+                url: '/ajax/supervisord',
+                type: 'get',
+                dataType: 'json',
+                success: function(hosts){
+                    $('#hosts-listing').html('');
+
+                    var keys = Object.keys(hosts);
+                    keys.sort();
+
+                    var groupedHosts = {};
+                    keys.forEach(function(key){
+                        groupname = hosts[key].host.GroupName;
+                        if (groupname != null){
+                            groupprocesses = []
+                            if (groupedHosts[groupname]){
+                                groupprocesses = groupedHosts[groupname].data;
+                            }
+                            groupedHosts[groupname] = {
+                                'host': {
+                                    'Name': groupname
+                                },
+                                'data': groupprocesses.concat(hosts[key].data)
+                            }
+                        } else {
+                            groupedHosts[hosts[key].host.Name] = hosts[key];
+                        }
+                    });
+                    keys = Object.keys(groupedHosts);
+
+                    colCount = 1;
+                    var row = null
+                    keys.forEach(function(key){
+                        if (colCount == 1) { row = $('<div>').addClass("row-fluid"); }
+                        row.append(new EJS({url: '/partials/dashboard-listing.ejs'}).render({host: groupedHosts[key].host, processes: groupedHosts[key].data}));
+                        if (colCount == 6) { $('#hosts-listing').append(row); colCount = 0; }
+                        colCount++;
+                    });
+                    $('#hosts-listing').append(row);
+                }
+            });
+        }
+
+        $(document).ready(function(){
+            updateList();
+            var updateInterval = setInterval('updateList()', 10000);
+        });
+    </script>
+<%= include footer.ejs %>

@@ -1,0 +1,114 @@
+<%= include header.ejs %>
+    <%= include menu.ejs %>
+    <div class="container">
+        <div class="main-container">
+            <div class="main clearfix">
+
+                <article>
+                    <h2>All Hosts</h2>
+                    <button type="button" id="refresh-toggle" class="btn btn-labeled btn-success active pull-right" style="margin-top: -50px;">
+                        <span class="btn-label"><i class="glyphicon glyphicon-refresh"></i></span>
+                        <span class="btn-text">Refresh on</span>
+                    </button>
+                    <hr>
+                    <div id="hosts-listing">
+                    </div>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+    </div>
+    <script type="text/javascript">
+        var refresh = true;
+        var hostTablesCollapse = [];
+        <%
+            var sessRole = '';
+            if (typeof session.user != 'undefined'){
+                sessRole = session.user.Role;
+            }
+        %>
+        var uiRole = '<%= sessRole %>';
+
+        function updateList() {
+            if (refresh == true) {
+                $.ajax({
+                    url: '/ajax/supervisord',
+                    type: 'get',
+                    dataType: 'json',
+                    success: function(hosts){
+                        $('#hosts-listing').html('');
+
+                        var keys = Object.keys(hosts);
+                        keys.sort();
+
+                        keys.forEach(function(key){
+                            if (!hostTablesCollapse[key])
+                            {
+                                hostTablesCollapse[key] = 'down';
+                            }
+
+                            if (hosts[key].data.code) {
+                                $('#hosts-listing').append(new EJS({url: '/partials/hosts-listing.ejs'}).render({host: hosts[key].host, error: hosts[key].data.code, role: uiRole}));
+                            } else {
+                                $('#hosts-listing').append(new EJS({url: '/partials/hosts-listing.ejs'}).render({host: hosts[key].host, processes: hosts[key].data, hostCollapsed: hostTablesCollapse[key], role: uiRole}));
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+        $(document).ready(function(){
+            updateList();
+            var updateInterval = setInterval('updateList()', 5000);
+
+            $('#hosts-listing').on('click', '.super-action', function(){
+                var action = $(this).attr('data-action');
+                var process = $(this).attr('data-process');
+                var host = $(this).attr('data-host');
+
+                $.ajax({
+                    url: '/ajax/supervisorctl',
+                    type: 'get',
+                    dataType: 'json',
+                    data: ({host: host, action: action, process: process}),
+                    success: function(data){
+                        console.log(data);
+                    }
+                });
+            }).on('click', '.process-info-btn', function(){
+                $(this).parent().parent().find('.spawn-error-div').slideToggle();
+                refreshOff();
+            }).on('click', '.table-collapse', function(){
+                var table = $(this).attr('data-table');
+                if ($(this).find('i').hasClass('glyphicon-collapse-up')) {
+                    $(this).find('i').removeClass('glyphicon-collapse-up').addClass('glyphicon-collapse-down');
+                    $("table[id='" + table + "']").toggle(false);
+                    hostTablesCollapse[table] = 'down';
+                } else {
+                    $(this).find('i').removeClass('glyphicon-collapse-down').addClass('glyphicon-collapse-up');
+                    $("table[id='" + table + "']").toggle(true);
+                    hostTablesCollapse[table] = 'up';
+                }
+            });
+
+            function refreshOn() {
+                refresh = true;
+                $('#refresh-toggle').addClass('active').removeClass('btn-danger').addClass('btn-success').find('.btn-text').text('Refresh on');
+            }
+
+            function refreshOff() {
+                refresh = false;
+                $('#refresh-toggle').removeClass('active').removeClass('btn-success').addClass('btn-danger').find('.btn-text').text('Refresh off');
+            }
+
+            $('#refresh-toggle').on('click', function(){
+                if ($(this).hasClass('active')) {
+                    refreshOff();
+                } else {
+                    refreshOn();
+                }
+            });
+        });
+    </script>
+<%= include footer.ejs %>

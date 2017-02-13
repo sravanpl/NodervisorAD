@@ -1,0 +1,45 @@
+<%
+    var hostSummary = [];
+    var styles = {
+        'CONERR': ['redIcons', 'fa fa-bolt'],
+        'FATAL': ['redIcons', 'fa fa-exclamation-circle'],
+        'STARTING': ['goldIcons', 'fa fa-refresh'],
+        'RUNNING': ['greenIcons', 'fa fa-check-circle'],
+        'STOPPED': ['blueIcons', 'fa fa-minus-circle'],
+        'BACKOFF': ['blueIcons', 'fa fa-minus-circle']
+    }
+    if (typeof processes != 'undefined') {
+        for (var i = 0; i < processes.length; i++) {
+            if (processes[i].errno) {
+                hostSummary['CONERR'] = 'NA';
+            } else{
+                if (!hostSummary[processes[i].statename]) {
+                    hostSummary[processes[i].statename] = 1;
+                } else {
+                    hostSummary[processes[i].statename]++;
+                }
+            }
+        }
+        sortedStatuses = [];
+        for (status in hostSummary) {
+            sortedStatuses.push([status, hostSummary[status]]);
+        }
+        statusOrder = ['CONERR', 'FATAL', 'STARTING', 'RUNNING', 'STOPPED', 'BACKOFF'];
+        sortedStatuses.sort(function(a, b){
+            if (statusOrder.indexOf(a[0]) < statusOrder.indexOf(b[0])) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
+        displayStatus = sortedStatuses[0][0];
+    }
+%>
+<div class="span2 well well-small">
+    <h2 style="margin-top: 0px;"><%= host.Name %></h2>
+    <div class="row-fluid">
+        <div class="span12" style="text-align: center;">
+            <span class="<%= styles[displayStatus][0] %> largeIcon"><i class="<%= styles[displayStatus][1] %>"> <%= sortedStatuses[0][1] %></i></span>
+        </div>
+    </div>
+</div>
